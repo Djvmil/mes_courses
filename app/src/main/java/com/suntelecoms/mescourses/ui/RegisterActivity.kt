@@ -1,4 +1,4 @@
-package com.suntelecoms.mescourses
+package com.suntelecoms.mescourses.ui
 
 import android.content.Intent
 import android.os.Build
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
+import com.suntelecoms.mescourses.R
 import com.suntelecoms.mescourses.core.BaseActivity
 
 
@@ -27,12 +28,19 @@ class RegisterActivity : BaseActivity() {
 
     fun onLoginViewClick(View: View?) {
         startActivity(Intent(this, LoginActivity::class.java))
-        overridePendingTransition(R.anim.slide_in_right, R.anim.stay)
+        overridePendingTransition(
+            R.anim.slide_in_right,
+            R.anim.stay
+        )
         finish()
     }
+
     fun onLoginClick(view: View?) {
         startActivity(Intent(this, LoginActivity::class.java))
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_in_right)
+        overridePendingTransition(
+            R.anim.slide_in_left,
+            R.anim.slide_in_right
+        )
         finish()
     }
 }

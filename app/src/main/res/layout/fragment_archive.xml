@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.ArchiveFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgMenuBackImageView"
+            style="@style/bank_BackImageView"  />
+
+        <TextView
+            android:id="@+id/txtAddNewSavingTitle"
+            style="@style/bank_TitleTextView"
+            android:layout_below="@id/imgMenuBackImageView"
+            android:layout_marginStart="@dimen/bank_spacing_standard_1"
+            android:layout_marginTop="@dimen/bank_spacing_standard_1"
+            android:layout_marginEnd="@dimen/bank_spacing_standard_1"
+            android:text="Archives" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_profile">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is my Profile Activity"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="20sp">
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
