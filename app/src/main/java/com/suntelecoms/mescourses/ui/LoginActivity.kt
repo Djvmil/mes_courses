@@ -38,7 +38,7 @@ class LoginActivity : BaseActivity() {
         showProgressDialog()
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             overridePendingTransition(
                 R.anim.slide_in_right,
                 R.anim.stay

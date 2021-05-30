@@ -4,10 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center"
+    android:background="@color/register_bk_color"
     android:gravity="center"
     android:padding="20sp">
     <FrameLayout
         android:id="@+id/frameLayout_Container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"  />
+        android:layout_height="match_parent"
+        android:background="@color/register_bk_color" />
 </LinearLayout>

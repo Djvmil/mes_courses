@@ -7,19 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import com.djamil.utils.onClick
 import com.suntelecoms.mescourses.R
-import kotlinx.android.synthetic.main.fragment_archive.view.*
+import com.suntelecoms.mescourses.core.BaseFragment
+import kotlinx.android.synthetic.main.bank_title_item_layout.view.*
 
 /**
  * A simple [Fragment] subclass.
  * Use the [ArchiveFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ArchiveFragment : Fragment() {
+class ArchiveFragment : BaseFragment() {
 
-    lateinit var activityParent: MainActivity
+    lateinit var activityParent: HomeActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityParent = activity as MainActivity
+        activityParent = activity as HomeActivity
     }
 
     override fun onCreateView(
@@ -28,6 +29,8 @@ class ArchiveFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_archive, container, false)
+
+        view.txtMenuItemTitle.text = "Archives"
         view.imgMenuBackImageView.onClick {
             activityParent.loadFragment(HomeFragment())
         }

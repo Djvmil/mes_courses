@@ -7,14 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.djamil.utils.onClick
 import com.suntelecoms.mescourses.R
-import kotlinx.android.synthetic.main.fragment_archive.view.*
+import com.suntelecoms.mescourses.core.BaseFragment
+import kotlinx.android.synthetic.main.bank_title_item_layout.view.*
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : BaseFragment() {
 
-    lateinit var activityParent: MainActivity
+    lateinit var activityParent: HomeActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityParent = activity as MainActivity
+        activityParent = activity as HomeActivity
     }
 
     override fun onCreateView(
@@ -23,6 +24,8 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_archive, container, false)
+
+        view.txtMenuItemTitle.text = "Profil"
         view.imgMenuBackImageView.onClick {
             activityParent.loadFragment(HomeFragment())
         }

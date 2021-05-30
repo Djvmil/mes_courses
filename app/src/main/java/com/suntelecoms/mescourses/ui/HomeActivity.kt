@@ -7,11 +7,11 @@ import com.suntelecoms.mescourses.AppClass
 import com.suntelecoms.mescourses.R
 import com.suntelecoms.mescourses.core.BaseActivity
 
-class MainActivity : BaseActivity() {
+class HomeActivity : BaseActivity() {
     private val mHomeFragment = HomeFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
         if (savedInstanceState == null) {
             loadFragment(mHomeFragment)
         }

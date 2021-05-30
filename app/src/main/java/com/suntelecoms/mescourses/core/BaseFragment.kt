@@ -35,19 +35,23 @@ open class BaseFragment : Fragment(), IOnBackPressed {
         AppClass.getAppInstance().backPressListeners.remove(this)
     }
 
-    override fun onBackPress(): Boolean {
 
-        Log.d("Search finish", "finish: 4" )
+
+    override fun onBackPress(): Boolean {
         // you should check that if this fragment is the currently used fragment or not
         // if this fragment is not used at the moment you should return false
-        return if (isVisible) {
+        if(!isVisible)
+            return false
+
+        if (isVisible) {
             if(imgMenuBackImageView != null)
                 imgMenuBackImageView.performClick()
-            true
-        }else
-            false
 
+            return true
+        }
+        return false
     }
+
 
 
 }

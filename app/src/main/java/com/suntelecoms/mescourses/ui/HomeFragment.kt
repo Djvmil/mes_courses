@@ -18,10 +18,10 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
  */
 class HomeFragment : BaseFragment() {
 
-    lateinit var activityParent: MainActivity
+    lateinit var activityParent: HomeActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityParent = activity as MainActivity
+        activityParent = activity as HomeActivity
     }
 
     override fun onCreateView(
@@ -44,5 +44,10 @@ class HomeFragment : BaseFragment() {
         }
 
         return view
+    }
+
+
+    override fun onBackPress(): Boolean {
+        return false
     }
 }

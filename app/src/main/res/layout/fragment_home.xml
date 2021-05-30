@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0091EA"
-    tools:context=".ui.MainActivity">
+    android:background="@color/register_bk_color"
+    tools:context=".ui.HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
