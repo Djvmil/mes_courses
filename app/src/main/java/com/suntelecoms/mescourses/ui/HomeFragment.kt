@@ -6,11 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.djamil.utils.onClick
-import com.suntelecoms.mescourses.AppClass
 import com.suntelecoms.mescourses.R
 import com.suntelecoms.mescourses.core.BaseFragment
-import kotlinx.android.synthetic.main.fragment_archive.*
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 /**
@@ -33,15 +31,15 @@ class HomeFragment : BaseFragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        course_cv.onClick{
+        view.course_cv.onClick{
             activityParent.loadFragment(ShoppingListFragment())
         }
 
-        archive_cv.onClick {
+        view.archive_cv.onClick {
             activityParent.loadFragment(ArchiveFragment())
         }
 
-        profile_cv.onClick {
+        view.profile_cv.onClick {
             activityParent.loadFragment(ProfileFragment())
         }
 

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.djamil.utils.onClick
 import com.suntelecoms.mescourses.R
-import kotlinx.android.synthetic.main.fragment_archive.*
+import kotlinx.android.synthetic.main.fragment_archive.view.*
 
 /**
  * A simple [Fragment] subclass.
@@ -28,7 +28,7 @@ class ShoppingListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_archive, container, false)
-        imgMenuBackImageView.onClick {
+        view.imgMenuBackImageView.onClick {
             activityParent.loadFragment(HomeFragment())
         }
         return view

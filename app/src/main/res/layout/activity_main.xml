@@ -6,54 +6,6 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:padding="20sp">
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Choose Dashboard UI"
-        android:gravity="center_horizontal"
-        android:paddingTop="25sp"
-        android:textColor="#F40909"
-        android:textStyle="bold"
-        android:paddingBottom="20sp"
-        android:textSize="25sp" />
-        <LinearLayout
-            android:orientation="vertical"
-            android:background="@drawable/border"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="20sp">
-            <Button
-                android:id="@+id/dashoardBlack"
-                android:text="Black  Home"
-                android:textSize="20sp"
-                android:background="@drawable/border"
-                android:layout_marginTop="20sp"
-                android:layout_gravity="center"
-                android:layout_width="250dp"
-                android:layout_height="60dp"/>
-
-            <Button
-                android:id="@+id/dashboardLite"
-                android:text="Lite  Home"
-                android:textSize="20sp"
-                android:background="@drawable/button"
-                android:layout_marginTop="20sp"
-                android:layout_gravity="center"
-                android:layout_width="250dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="60dp"/>
-        </LinearLayout>
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:id="@+id/login_instructions"
-        android:text="Download more free source code : \n www.nulledsourcecode.com" />
-
-
-
     <FrameLayout
         android:id="@+id/frameLayout_Container"
         android:layout_width="match_parent"
